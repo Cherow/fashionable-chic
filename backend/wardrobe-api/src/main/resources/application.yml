@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: wardrobe-api
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/fashionable_chic
+    username: root
+    password: ""
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8081
+
+
+imagekit:
+  public-key: public_mnJTI8tzjFlAndqfpXkl52dMaF8=
+  private-key: private_lstvMjZD9bsRmES3d/y+kDMQSdk=
+  url-endpoint: https://ik.imagekit.io/zya9hzma6
+
+ai:
+  ollama:
+    base-url: http://localhost:11434
+    model: gemma3:4b
